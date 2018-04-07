@@ -1,0 +1,15 @@
+<h3 style="text-align:center;">Welcome To Rental Management System ... </h3>
+
+<br>
+<h1>Search</h1>
+
+<p>
+	<b>Select the Location to get the branch and Categories for it.</b>
+</p>
+
+
+<button class="btn btn-primary" ng-click="homeCtrl.showLocations = !homeCtrl.showLocations">Select Location</button>
+
+<div ng-show="homeCtrl.showLocations" ng-repeat="country in homeCtrl.data">
+	<branch-card location="country"></branch-card>
+</div>

@@ -1,0 +1,21 @@
+<h4> <a ui-sref="index"> Home / </a> Equipment Catalog </h4>
+<div>
+    <ul ng-repeat="category in categoryCtrl.branch.categories">
+        <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                         transition: 0.3s;
+                         width:200px; 
+                         background-color:#fff;
+                         font-size:16px;                         
+                         float:left; 
+                         margin:10px;
+                         ">
+            <img src="../category/{{category.image}}" alt="{{category.name}}" style="width:100%">
+            <div class="container">
+                <h4>
+                    <a ng-click="showSubCategory(category)">{{category.name}}</a>
+                </h4>
+            </div>
+        </div>
+    </ul>
+</div> 
+

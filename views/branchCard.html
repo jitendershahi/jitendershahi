@@ -1,0 +1,14 @@
+ <div>
+    <ul>
+        <li ng-click="branchDCtrl.showMenu=!branchDCtrl.showMenu"> {{location.name}} </li>
+        <ul ng-show="branchDCtrl.showMenu">
+            <li ng-repeat="branch in location.branches">
+                <a ng-click="showCategory(branch)">{{branch.name}}</a>
+
+            </li>
+        </ul>
+    </ul>
+</div> 
+
+
+
